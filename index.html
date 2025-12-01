@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💡 Git 小怪獸冒險之旅：輕鬆學會版本控制 💡</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入一個可愛風格的字體 (例如 Google Fonts: Noto Sans TC) -->
+    <link href="fonts.googleapis.com" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>👾 Git 小怪獸冒險之旅 👾</h1>
+        <p>跟著可愛的小怪獸一起學習 Git 版本控制的七大指令！</p>
+    </header>
+
+    <main>
+        <!-- ADD -->
+        <section id="add" class="command-section">
+            <div class="icon">➕</div>
+            <h2>`git add` - 準備行李</h2>
+            <p>想像你在打包行李。`git add .` 就是把房間裡所有要帶走的衣物 (變更的檔案) 放到你的行李箱 (暫存區) 裡。</p>
+            <pre><code>git add .</code></pre>
+        </section>
+
+        <!-- COMMIT -->
+        <section id="commit" class="command-section">
+            <div class="icon">📦</div>
+            <h2>`git commit` - 蓋章寄出</h2>
+            <p>行李箱打包好後，貼上標籤並蓋章確認 (提交變更)，告訴 Git 這次的變動是什麼意思，形成一個完整的歷史記錄。</p>
+            <pre><code>git commit -m "新增了首頁設計"</code></pre>
+        </section>
+
+        <!-- PUSH -->
+        <section id="push" class="command-section">
+            <div class="icon">🚀</div>
+            <h2>`git push` - 發射火箭</h2>
+            <p>你的行李 (提交) 已經準備好了，`git push` 就像發射火箭，將你的本地變更發送到遠端伺服器 (如 GitHub)。</p>
+            <pre><code>git push origin main</code></pre>
+        </section>
+
+        <!-- PULL -->
+        <section id="pull" class="command-section">
+            <div class="icon">🎣</div>
+            <h2>`git pull` - 釣魚更新</h2>
+            <p>你想看看遠端伺服器有沒有別人新增的好東西。`git pull` 就像釣魚，把遠端的最新程式碼抓下來並合併到你的本地專案。</p>
+            <pre><code>git pull origin main</code></pre>
+        </section>
+
+        <!-- REVERT -->
+        <section id="revert" class="command-section">
+            <div class="icon">⏪</div>
+            <h2>`git revert` - 時光倒流</h2>
+            <p>發現最新的行李標籤寫錯了！`git revert` 不會刪除歷史，而是建立一個新的「反向提交」，撤銷之前的特定變更，是比較安全的做法。</p>
+            <pre><code>git revert [commit_hash]</code></pre>
+        </section>
+
+        <!-- CHECKOUT -->
+        <section id="checkout" class="command-section">
+            <div class="icon">🚪</div>
+            <h2>`git checkout` - 任意門</h2>
+            <p>想要回到過去的某個時間點，或是切換到另一個平行世界 (分支) 去看看？`git checkout` 就是那扇神奇的任意門。</p>
+            <pre><code>git checkout dev-branch</code></pre>
+            <pre><code>git checkout [commit_hash]</code></pre>
+        </section>
+
+        <!-- MERGE -->
+        <section id="merge" class="command-section">
+            <div class="icon">🤝</div>
+            <h2>`git merge` - 合體進化</h2>
+            <p>當你在平行世界 (分支) 完成任務後，`git merge` 可以把那個世界的成果帶回主線，讓專案合體進化！</p>
+            <pre><code>git merge feature-branch</code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>學習愉快！祝您成為 Git 大師！🎉</p>
+        <p>更多 Git 資訊請參考 [MDN Web Docs](https://developer.mozilla.org/zh-TW/docs/Learn_web_development/Core/Version_control) 或 [Git 官方網站](https://git-scm.com/)。</p>
+    </footer>
+</body>
+</html>
